@@ -66,7 +66,7 @@ controller:
     # -- Registry to use for the controller
     repository: argoproj/workflow-controller
     # -- Image tag for the workflow controller. Defaults to `.Values.images.tag`.
-    tag: ""
+    tag: "v3.3.9"
   # -- parallelism dictates how many workflows can be running at the same time
   parallelism:
   # -- Globally limits the rate at which pods are created.
@@ -370,7 +370,7 @@ executor:
     # -- Repository to use for the Workflow Executors
     repository: argoproj/argoexec
     # -- Image tag for the workflow executor. Defaults to `.Values.images.tag`.
-    tag: ""
+    tag: "v3.3.9"
     # -- Image PullPolicy to use for the Workflow Executors. Defaults to `.Values.images.pullPolicy`.
     pullPolicy: ""
   # -- Resource limits and requests for the Workflow Executors
@@ -394,7 +394,7 @@ server:
     # -- Repository to use for the server
     repository: argoproj/argocli
     # -- Image tag for the Argo Workflows server. Defaults to `.Values.images.tag`.
-    tag: ""
+    tag: "v3.3.9"
   # -- optional map of annotations to be applied to the ui Deployment
   deploymentAnnotations: {}
   # -- optional map of annotations to be applied to the ui Pods
